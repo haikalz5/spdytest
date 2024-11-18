@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Blank</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            }
+
+            .line {
+            height: 4px;
+            background-color: #ccc;
+            }
+
+            .step .label {
+            font-size: 0.9rem;
+            }
+
+            #accordionSidebar {
+    background-color: #00263b;
+}
+
+#accordionSidebar .sidebar-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#accordionSidebar .sidebar-heading {
+    color: #ffffff;
+}
+
+.coupon-btn {
+    background-color: white;
+    border: 2px solid #00263b; /* Border color */
+    color: #00263b; /* Text color */
+  }
+
+  .coupon-btn:hover {
+    background-color: #00263b; /* Hover background color */
+    color: white; /* Text color stays white on hover */
+    border-color: #003b5c; /* Hover border color */
+  }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #00263b;">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="quotebook.html">
+                <div class="sidebar-brand-text mx-3">
+                    <img src="./img/spdy/white logo.png" alt="Courier Logo" style="width: 150px; height: auto;">
+                </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0" style="border-color: rgba(255, 255, 255, 0.1);">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider" style="border-color: rgba(255, 255, 255, 0.1);">
+
+            <!-- Heading -->
+            <div class="sidebar-heading" style="color: #ffffff;">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Manage Parcel</span>
+                </a>
+                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header"></h6>
+                        <a class="collapse-item active" href="quotebook.html">Send Parcel</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn" type="button" style="background-color: #ff6a00; border-color: #ff6a00;" onmouseover="this.style.backgroundColor='#e65c00'" onmouseout="this.style.backgroundColor='#ff6a00'">
+                                    <i class="fas fa-search fa-sm" style="color: white;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">Checkout</h1>
+
+                    <div class="container mt-4" style="padding-bottom: 15px;">
+                        <div class="d-flex justify-content-between align-items-center" style="width: 60%; margin: 0 auto;">
+                            <!-- Step 1 -->
+                            <div class="step text-center">
+                                <div class="circle bg-secondary text-white">1</div>
+                            </div>
+                            <div class="line flex-grow-1 mx-2"></div>
+                            <!-- Step 2 -->
+                            <div class="step text-center">
+                                <div class="circle bg-secondary text-white">2</div>
+                            </div>
+                            <div class="line flex-grow-1 mx-2"></div>
+                            <!-- Step 3 -->
+                            <div class="step text-center">
+                                <div class="circle text-white" style="background-color: #ff6a00;">3</div>
+                            </div>
+                            <div class="line flex-grow-1 mx-2"></div>
+                            <!-- Step 4 -->
+                            <div class="step text-center">
+                                <div class="circle bg-secondary text-white">4</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Table on the left -->
+                        <div class="col-lg-8">
+                          <div class="card">
+                            
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <thead class="table-secondary">
+                                      <tr>
+                                        <th>#</th>
+                                        <th>Courier</th>
+                                        <th>Sender</th>
+                                        <th>Receiver</th>
+                                        <th>Price</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="orderItems">
+                                      <tr>
+                                        <td>1</td>
+                                        <td>
+                                          <img src="./img/jnt.png" alt="Courier Logo" style="width: 80px;">
+                                        </td>
+                                        <td>
+                                          <strong>Hisyam Hilman</strong><br>
+                                          Perak
+                                        </td>
+                                        <td>
+                                          <strong>Aidil Aiman</strong><br>
+                                          Selangor
+                                        </td>
+                                        <td>RM 10</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- Coupon card and total price on the right -->
+                        <div class="col-lg-4">
+                          <!-- Coupon Code Card -->
+                          <div class="card mb-3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Apply Coupon Code</h5>
+                                <!-- Remove the inline styles and use the class instead -->
+                                <button class="btn w-100 coupon-btn" data-bs-toggle="modal" data-bs-target="#couponModal">Enter Coupon</button>
+                            </div>
+                          </div>
+                          
+                  
+                          <!-- Total Price Card -->
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Total Price</h5>
+                              <p id="totalPrice" class="h4">RM 10</p>
+                              <button class="btn custom-btn w-100" style="background-color: #ff6a00; border-color: #ff6a00; color: white;" id="proceedToPaymentBtn">Proceed to Payment</button>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Coupon Modal -->
+                        <div class="modal fade" id="couponModal" tabindex="-1" aria-labelledby="couponModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="couponModalLabel">Apply Coupon</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="couponForm">
+                                            <div class="mb-3">
+                                                <label for="couponCode" class="form-label">Enter Coupon Code</label>
+                                                <input type="text" class="form-control" id="couponCode" placeholder="e.g., DISCOUNT10">
+                                            </div>
+                                            <button type="button" class="btn btn-primary w-100" onclick="applyCoupon()">Apply</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Success Modal -->
+                        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="successModalLabel">Coupon Applied</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Your coupon has been successfully applied! The new total price is: 
+                                        <strong id="newPriceDisplay">RM 0.00</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Error Modal -->
+                        <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="errorModalLabel">Invalid Coupon</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        The coupon code you entered is invalid. Please try again.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Confirmation Modal -->
+                        <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="paymentModalLabel">Payment Checkout</h5>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                <h4 class="mt-3">Your payment is being processed...</h4>
+                                <p id="loadingMessage">Redirecting...</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+
+                      </div>
+
+                    
+
+                    
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+   
+
+    
+
+    
+
+    </script>
+
+    
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!--<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
