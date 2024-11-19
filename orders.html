@@ -61,6 +61,25 @@
         display: block; /* Makes the label appear above the radio buttons */
         margin-bottom: 5px; /* Adds some space below the label */
     }
+    .edit-courier-btn, .edit-postcode-btn, .edit-weight-btn {
+    background-color: #00263b;
+    color: white; /* Ensure the text color contrasts with the background */
+    border-color: #00263b;
+}
+    /* Button hover effect */
+    .edit-courier-btn:hover, .edit-postcode-btn:hover, .edit-weight-btn:hover  {
+        background-color: #ff6a00;
+        color: white; /* Ensure text is readable on hover */
+        border-color: #ff6a00;
+    }
+
+    .btn.custom-btn:hover {
+        background-color: #00263b; /* Dark blue hover color */
+        border-color: #00263b;    /* Match the border with the background */
+        color: white;            /* Keep the text color white for contrast */
+    }
+
+
             </style>
 
 </head>
@@ -74,7 +93,7 @@
         <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #00263b;">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="orders.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="quotebook.html">
                 <div class="sidebar-brand-text mx-3">
                     <img src="./img/spdy/white logo.png" alt="Courier Logo" style="width: 150px; height: auto;">
                 </div>
@@ -85,7 +104,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="orders.html">
+                <a class="nav-link" href="quotebook.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
@@ -586,7 +605,12 @@
                                         <div>
                                             <img src="./img/jnt.png" alt="Courier Logo" style="width: 80px;">
                                         </div>
-                                        <button class="btn btn-outline-secondary btn-sm">Edit Courier</button>
+                                        <button 
+                                            class="btn btn-outline-secondary btn-sm edit-courier-btn" 
+                                            onclick="window.location.href='quotebook.html';"
+                                        >
+                                            Edit Courier
+                                        </button>
                                     </div>
                                     <hr>
                                     <!-- Origin and Destination -->
@@ -600,7 +624,7 @@
                                             <strong>MY</strong>
                                             <p class="mb-0">Selangor</p>
                                         </div>
-                                        <button class="btn btn-outline-secondary btn-sm">Edit Postcode</button>
+                                        <button class="btn btn-outline-secondary btn-sm edit-postcode-btn" >Edit Postcode</button>
                                     </div>
                                     <hr>
                                     <!-- Parcel Information -->
@@ -609,7 +633,7 @@
                                         <p class="mb-1"><strong>Parcel ID:</strong> EPB-108230987</p>
                                         <p class="mb-1 d-flex justify-content-between align-items-center">
                                             <span><strong>Weight:</strong> 1.00 kg</span>
-                                            <button class="btn btn-outline-secondary btn-sm">Edit Weight</button>
+                                            <button class="btn btn-outline-secondary btn-sm edit-weight-btn" >Edit Weight</button>
                                         </p>
                                     </div>
                                     <hr>
@@ -620,7 +644,13 @@
                                     </div>
                                     <hr>
                                     <!-- Checkout -->
-                                    <button id="submitButton" class="btn custom-btn w-100" style="background-color: #ff6a00; border-color: #ff6a00; color: white;">Submit</button>
+                                    <button 
+                                        id="submitButton" 
+                                        class="btn custom-btn w-100" 
+                                        style="background-color: #ff6a00; border-color: #ff6a00; color: white;"
+                                    >
+                                        Submit
+                                    </button>
                                 </div>
                             </div>
                         </div>
