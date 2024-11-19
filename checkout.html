@@ -578,11 +578,12 @@
             document.getElementById("newPriceDisplay").textContent = `RM ${newPrice.toFixed(2)}`;
 
             // Show error modal even for valid coupon
-            $('#errorModal').modal('show');
+            $('#couponModal').modal('hide');
+            $('#successModal').modal('show');
 
             // Once the error modal is closed, show the coupon modal again
-            $('#errorModal').on('hidden.bs.modal', function () {
-                $('#couponModal').modal('show');
+            $('#successModal').on('hidden.bs.modal', function () {
+                $('#successModal').modal('hide');
             });
         } else {
             $('#couponModal').modal('hide');
