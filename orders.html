@@ -397,7 +397,7 @@
 
                     <div class="row">
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-8">
 
                             <!-- Collapsable Card Example -->
                             <div class="card shadow mb-4">
@@ -524,22 +524,30 @@
                                 <div class="collapse show" id="packageCardExample">
                                     <div class="card-body">
                                         <!-- First Row: Parcel Category Dropdown -->
-                                        <div class="form-group">
+                                        <!--<div class="form-group">
                                             <select class="form-control" id="parcelCategory">
                                                 <option selected disabled>Select Parcel Category</option>
                                                 <option>Parcel</option>
                                                 <option>Document</option>
-                                                <!-- Add more categories as needed -->
+                                                
                                             </select>
-                                        </div>
+                                        </div> -->
                             
                                         <!-- Second Row: Parcel Name -->
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="parcelName" placeholder="Parcel Name">
+                                        <div class="form-group row">
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" id="parcelContent" placeholder="Parcel Content">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon1">RM</span>
+                                                    <input type="text" class="form-control" placeholder="Parcel Value" aria-label="parcelValue" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
                                         </div>
                             
                                         <!-- Third Row: Width, Length, and Height with Labels -->
-                                        <div class="form-row">
+                                       <!--<div class="form-row">
                                             <div class="form-group col-md-4">
                                                 <label for="width">Width</label>
                                                 <input type="number" class="form-control" id="width" placeholder="Width">
@@ -552,7 +560,7 @@
                                                 <label for="height">Height</label>
                                                 <input type="number" class="form-control" id="height" placeholder="Height">
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>
@@ -575,7 +583,7 @@
                                         </div>
                                         
                                         <!-- Second Row: Pickup Time (AM or PM) -->
-                                        <div class="form-group">
+                                        <!--<div class="form-group">
                                             <label>Select Pickup Time</label>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="pickupTime" id="pickupAM" value="AM">
@@ -585,7 +593,7 @@
                                                 <input class="form-check-input" type="radio" name="pickupTime" id="pickupPM" value="PM">
                                                 <label class="form-check-label" for="pickupPM">PM</label>
                                             </div>
-                                        </div>
+                                        </div>-->
                         
                                     </div>
                                 </div>
@@ -593,7 +601,7 @@
 
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <!-- Courier Details Card -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
